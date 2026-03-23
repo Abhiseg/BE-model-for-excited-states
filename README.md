@@ -15,9 +15,13 @@ In addition, the code includes functionality to compute oscillator strengths wit
 - Topology near connical intersections in between $S_0$ and $S_1$ states. 
 
 ## Prerequisites and Required Inputs
-Before compiling the code, FFTW3 package should be installed in advance. 
-The data of triplet excited states should be obtained from an external electronic structure package. 
-Before run the code (runme.exe), users must prepare the following input files:
+Before compiling the code, the FFTW3 package must be installed. 
+The triplet excited-state data should be generated using an external electronic structure package via unrestricted HF/KS calculations. 
+
+Preparing triplet excited states beyond simple HOMO–LUMO transitions can be challenging due to variational collapse. 
+Therefore, particular care is required during state-specific triplet optimizations.
+
+Before running the code (e.g., ./runme.exe from the terminal), users must prepare the following input files:
 
 ### 1. Molecular Orbital Energies (mo_en.dat)
 This file must contain:
@@ -31,14 +35,41 @@ These orbitals must be obtained from the triplet-state electronic structure calc
 
 ### 3. Basis Set File (basis_ae.inp)
 The atomic basis functions must be provided in a specific format required by the code.
-Users should follow the formatting illustrated in the example directories:
+Users should follow the formatting llustrated in the example directories:
 - acetone_npistar_b3lyp
 - C2H2_C1s_npistar_blyp
+  
+### 4. More about basis set setup 
+- The basis functions must be expressed in Cartesian form rather than spherical harmonics. 
+- The current implementation supports basis sets up to f-type orbitals.
+- The basis set file should follow an ascending order of angular momentum (s, p, d, f).
+- It is important to maintain this ordering consistently, including in the external electronic structure package used to generate the input data. 
 
-### 4. Molecular Geometry (sample.inp)
+### 5. Molecular Geometry (sample.inp)
 The molecular structure must be supplied:
-- In Bohr units
-- Using the format demonstrated in the example input files
+- In Bohr units.
+- Using the format demonstrated in the example input files.
+- This geometry should match with the geometry used in external electronic software package.
 
-### Contact: abhisek.ghosal@northwestern.edu for any enquiry.
-For more details, see our publication: ... coming soo
+### 6. More about sample.inp setup 
+- carteXXXXX aunits up to end should contain the geometry of the systems.
+- unre X (X should be half of the total number of electrons in the system for a closed-shell refrence!)
+- Accordingly, next X lines should fill with 2, for unrestricted KS/HF calculations.
+- These keywords and their values should be checked carefuly in sample inp file to avoid any backtrace error.
+
+### 7. Real-space grid (std_grid.dat and grid_spacing.dat)
+The simulation grid contains 
+- The number of grid points in x, y, and z-directions contained in std_grid.dat file.
+- The smallest spacing by $\delta_x=\delta_y=\delta_z$ contained in grid_spacing.dat file.
+
+### 8. Run the code
+  To run the code, a list of objectives files are there which compute the $K_{if}$ in real-space and used to calculate the excitation energies in main_exciton.f90 routine. This routine is hared for general purpose and others are available upon considerable request. We donot have any version control make file, rather we add compilation and executation in a one file called runme.exe. The system where it runs is mentioned in system_specification.dat file. The output will fine in STS.out file. 
+
+### 9. Examples 
+     Two examples are added here for the general purpose. 
+- C$_2$H$_2$ core excitation from C1s to n$\pi^{\star}$.
+- Acetone n$\pi^{star}$ excitation. 
+
+### 10. Contact 
+For any enquiry mailed at abhisek.ghosal@northwestern.edu.
+For more details, see our publication: ... coming soon
