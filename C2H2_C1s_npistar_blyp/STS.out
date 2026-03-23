@@ -1,0 +1,26 @@
+ JOB IS RUNNING ON HOST raj                             
+UNDER THE OPERATING SYSTEM LINUX ON: 23/03/2026; AT: 16:40:29
+ Initial Time   2.9519999999999998E-003
+              
+ ----------------BE Model-------------
+              
+ GRID SPACING  0.29999999999999999     
+              
+ Cycle:           1
+ N_x=          80 N_y=          80 N_z=          80
+ Ground State Energy (a.u.) =   -77.318977550000000     
+ Triplet State Energy (a.u.) =   -66.832800789999993     
+ triplet-excitation energy in ev=   285.33935581636018     
+ Kif (eV)=  0.35605529766437000     
+ Osc. Strength (a.u.)=   1.6622670810889820E-002 and Singlet-Excitation energy (eV) =   285.69541111402452     
+              
+ Cycle:           2
+ N_x=          84 N_y=          84 N_z=          84
+ Ground State Energy (a.u.) =   -77.318977550000000     
+ Triplet State Energy (a.u.) =   -66.832800789999993     
+ triplet-excitation energy in ev=   285.33935581636018     
+ Kif (eV)=  0.35565711741648132     
+ Osc. Strength (a.u.)=   1.6622625470757220E-002 and Singlet-Excitation energy (eV) =   285.69501293377664     
+    
+ Final Time   3.8396150000000002     
+ Job is completed successfully
