@@ -74,7 +74,7 @@ The simulation grid contains
 ### 9. Examples
 The following examples illustrate typical applications of the code:
 
-- **C₂H₂ (Acetylene):** Core excitation from the C 1s orbital to the nπ* state.  
+- **C₂H₂ (Acetylene):** Core excitation from the C(1s) orbital to the nπ* state.  
 - **Acetone:** Low-lying electronic excitation from a nonbonding (n) orbital to a π* orbital.
 
 ### 10. Contact 
