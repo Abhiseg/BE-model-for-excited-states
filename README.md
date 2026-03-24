@@ -71,10 +71,11 @@ The simulation grid contains
  Relevant build information is specified in the system_specification.dat file. 
  The final output is written to the STS.out file.
 
-### 9. Examples 
-     Two examples are added here for the general purpose. 
-- C$_2$H$_2$ core excitation from C1s to n$\pi^{\star}$.
-- Acetone n$\pi^{star}$ excitation. 
+### 9. Examples
+The following examples illustrate typical applications of the code:
+
+- **C₂H₂ (Acetylene):** Core excitation from the C 1s orbital to the nπ* state.  
+- **Acetone:** Low-lying electronic excitation from a nonbonding (n) orbital to a π* orbital.
 
 ### 10. Contact 
 For any enquiry mailed at abhisek.ghosal@northwestern.edu.
