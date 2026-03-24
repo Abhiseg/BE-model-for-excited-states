@@ -8,7 +8,7 @@ The $K_{if}$ integrals are evaluated using Fourier convolution theorem as implem
 In addition, the code includes functionality to compute oscillator strengths within the frozen-core approximation, also implemented on the same real-space grid.
 
 ## Available Features : 
-- Optical gap of orgaic chromophore.
+- Optical gap of orgaic chromophores.
 - The charge-transfer excitaion in TADF systems.
 - Low-lying excited states, both valence and Rydberg excitations.
 - Core-level K-edge and L-edge excitations of second and third group of elements.
