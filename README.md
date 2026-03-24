@@ -15,7 +15,7 @@ In addition, the code includes functionality to compute oscillator strengths wit
 - Topology near connical intersections in between $S_0$ and $S_1$ states. 
 
 ## Prerequisites and Required Inputs
-Before compiling the code, the FFTW3 package must be installed. 
+Before compiling the code, gfortran (or ifort) and the FFTW3 package must be installed. 
 The triplet excited-state data should be generated using an external electronic structure package via unrestricted HF/KS calculations. 
 
 Preparing triplet excited states beyond simple HOMO–LUMO transitions can be challenging due to variational collapse. 
@@ -60,10 +60,16 @@ The molecular structure must be supplied:
 ### 7. Real-space grid (std_grid.dat and grid_spacing.dat)
 The simulation grid contains 
 - The number of grid points in x, y, and z-directions contained in std_grid.dat file.
-- The smallest spacing by $\delta_x=\delta_y=\delta_z$ contained in grid_spacing.dat file.
+- The smallest spacing by $\delta_x=\delta_y=\delta_z=0.3$ contained in grid_spacing.dat file.
 
 ### 8. Run the code
-  To run the code, a list of objectives files are there which compute the $K_{if}$ in real-space and used to calculate the excitation energies in main_exciton.f90 routine. This routine is hared for general purpose and others are available upon considerable request. We donot have any version control make file, rather we add compilation and executation in a one file called runme.exe. The system where it runs is mentioned in system_specification.dat file. The output will fine in STS.out file. 
+ To run the code, a set of object files is provided that compute the $K_{if}$ integrals in real space and are used by the main_exciton.f90 routine to evaluate excitation energies. 
+ This routine is intended for general use; additional modules may be made available upon reasonable request.
+
+ The code does not use a version-controlled build system; instead, a simple system-specific build script (build.sh) is provided. 
+ Users should modify this script according to their system configuration. 
+ Relevant build information is specified in the system_specification.dat file. 
+ The final output is written to the STS.out file.
 
 ### 9. Examples 
      Two examples are added here for the general purpose. 
