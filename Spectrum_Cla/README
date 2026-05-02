@@ -1,0 +1,22 @@
+# Spectrum Example: Chlorophyll-a (Chl a)
+
+This directory contains an example for generating the absorption spectrum of the Chlorophyll-a (Chl a) system.
+
+## Files
+
+- `Theoretical_data.dat`  
+  Data calculated using the BE model.  
+  - Column 1: Excitation energy  
+  - Column 2: Oscillator strength  
+
+- `Experiment_data.dat`  
+  Experimental data obtained using the digitizing tool:  
+  https://app.digitizer.starrydata.org/
+
+- `plot_final.py`  
+  Python script that reads the above files and generates the spectrum plot.  
+  A full width at half maximum (FWHM) of **10 nm** was used.
+
+## Notes
+
+A similar procedure can be followed to generate spectrum plots for other systems.
