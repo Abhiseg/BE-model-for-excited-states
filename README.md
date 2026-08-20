@@ -79,4 +79,6 @@ The following examples illustrate typical applications of the code:
 
 ### 10. Contact 
 For any enquiry mailed at abhisek.ghosal@northwestern.edu.
-For more details, see our publication: ... coming soon
+For more details, see our publication: Simple Model for Challenging Excited States: Low-Lying, Core-Level and Conical-Intersection Regimes
+Raj Roy and Abhisek Ghosal*
+J. Chem. Theory Comput., accepted (2026) — doi.org/10.1021/acs.jctc.6c00850
