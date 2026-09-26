@@ -1,0 +1,34 @@
+1                                  !pp=0, ae=any (+)ve integer
+titlx xxxxxxxxxxxxxxxxxxxxx        !arbitrary title
+charxx 0                           !charge
+multxxxxxxxx 1                     !multiplicity
+cartxxxxx aunits                   !if not angs, give anything junk
+H       2.0376930598     -1.8584221347      0.0001106212   1.0
+C       1.2528986551      0.0369425841     -0.0000003950   6.0
+H       1.9425813567      1.0201443430      1.6766253836   1.0
+H       1.9425979459      1.0199573036     -1.6767293375   1.0
+O      -1.4141703197     -0.2300572586     -0.0000003207   8.0
+H      -2.1269017365      1.4371230531     -0.0000017314   1.0
+end                                !end of coordinates
+maxcxxxx 200                        !max. scf cycle
+econxxxxxxxx 1.0e-08               !en. conv.
+dconxxxxxxxx 1.0e-08               !den. conv.
+dmix 0.6                           !needed 0.8 for Co2
+pmix 0.6                          !needs 0.8 for co2
+unre 9
+2
+2
+2
+2
+2
+2
+2
+2
+2
+end
+grid  128   0.3                  ! 128 0.08, 64, 0.15 
+exco  b3x-  b3c-                   !slt0(2) slt1(2) rxc-(2) 
+end                                !end of job
+
+
+

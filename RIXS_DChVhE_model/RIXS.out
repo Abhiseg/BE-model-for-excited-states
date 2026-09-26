@@ -1,0 +1,5 @@
+# RIXS emission (core STS - valence STS; osc from osc/)
+core_excitation_eV          2.8937316025413287E+02
+valence_excitation_eV       1.2979252981038584E+01
+rixs_emission_energy_eV     2.7639390727309427E+02
+emission_osc_strength_au    1.2720334739956715E-01

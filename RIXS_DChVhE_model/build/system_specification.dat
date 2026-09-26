@@ -1,0 +1,19 @@
+================ System Specifications ================
+
+Operating System:
+Ubuntu 22.04.5 LTS
+
+Architecture:
+x86_64
+
+Compiler:
+GNU Fortran (gfortran) 11.4.0
+
+Linked Libraries:
+FFTW: /lib/x86_64-linux-gnu/libfftw3.so.3
+LAPACK: /lib/x86_64-linux-gnu/liblapack.so.3
+
+Object files in src/ built with:
+  gfortran -std=legacy -O3 -I/usr/include
+
+======================================================
